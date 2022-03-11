@@ -1,0 +1,11 @@
+Kingdom,Phylum,Class,Order,Family,Genus,Species,Value
+Bacteria,Bacteroidetes,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides_fragilis,2.649705847
+Bacteria,Bacteroidetes,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides_faecis,3.325605915
+Bacteria,Firmicutes,Bacilli,Erysipelotrichales,Erysipelatoclostridiaceae,Erysipelatoclostridium,None,0.662021207
+Bacteria,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,None,1.857135944
+Bacteria,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,None,0.978425309
+Bacteria,Firmicutes,Bacilli,Lactobacillales,Leuconostocaceae,Weissella,None,1.126217899
+Bacteria,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia-Shigella,None,0.606361357
+Bacteria,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,None,None,2.667997805
+Bacteria,Proteobacteria,Gammaproteobacteria,None,None,None,None,0.395515396
+Bacteria,None,None,None,None,None,None,1.577632426
