@@ -30,7 +30,6 @@ train = pd.read_csv("level-6.csv")
 train.head()
 train.info()
 
-from sklearn.preprocessing import LabelEncoder
 labelencoder = LabelEncoder()
 train["Diagnosis"] = labelencoder.fit_transform(train["Diagnosis"])
 # test["Diagnosis"] = labelencoder.fit_transform(test["Diagnosis"])
