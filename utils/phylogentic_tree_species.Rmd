@@ -1,0 +1,18 @@
+library("ape")
+
+# Read Data
+#Data <- read.delim("C:/Users/leo44/Desktop/2021中研院實習/大腸癌/merged/CRC_species/20220119_CRC_taxa_group1_species_new_johnny.txt", sep = "\t", header = TRUE, stringsAsFactors = TRUE)
+Data <- read.delim("../utils/utils_data/taxa_list.txt"), sep = "\t", header = TRUE, stringsAsFactors = TRUE)
+length(Data['Order'])
+sum(is.na(Data))
+
+# Draw the phylogeny tree
+Data <- droplevels(Data)
+frm <- ~Kingdom/Phylum/Class/Order/Family/Genus/Species
+tr <- as.phylo(frm, data = Data, collapse = FALSE)
+tr$edge.length <- rep(5, nrow(tr$edge))
+plot(tr, show.node.label=TRUE)
+Nnode(tr)
+
+# Write newick file
+write.tree(tr, file = "../trees/CRC_phylotree_new.newick")

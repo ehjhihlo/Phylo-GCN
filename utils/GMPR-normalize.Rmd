@@ -1,0 +1,32 @@
+# GMPR()--> https://github.com/jchen1981/GMPR
+install.packages("GUniFrac")
+install.packages("GMPR")
+install.packages("devtools")
+devtools::install_local("./GMPR_0.1.3.tar.gz")
+
+library("GUniFrac")
+library("GMPR")
+library(data.table)
+library(ecodist)
+library(vegan)
+library(ape)
+library(ggfortify)
+
+# Iuput Dataset; format(columns:bacteria; rows:samples)
+Data <- read.delim("C:/Users/leo44/Desktop/2021中研院實習/大腸癌/merged/CRC_species/CRC_OTU_table_for_normalize_2_label-group1_new.txt", sep = "\t", header = TRUE, row.names = 1, stringsAsFactors = FALSE)
+
+Data2 <- transpose(Data)
+otu.tab <- as.matrix(Data2)
+gmpr.size.factor <- GMPR(otu.tab)
+Taxa_GMPR <- otu.tab / gmpr.size.factor
+Taxa_GMPR_log10 <- log10(Taxa_GMPR + 1)
+Taxa_GMPR_log10[is.na(Taxa_GMPR_log10)] <- 0
+Taxa_GMPR[is.na(Taxa_GMPR)] <- 0
+rownames(Taxa_GMPR_log10) <- colnames(Data)
+colnames(Taxa_GMPR_log10) <- rownames(Data)
+#rownames(Taxa_GMPR) <- colnames(Data)
+#colnames(Taxa_GMPR) <- rownames(Data)
+Taxa_GMPR_log10 <- t(Taxa_GMPR_log10)
+#Taxa_GMPR <- t(Taxa_GMPR)
+
+write.csv(Taxa_GMPR_log10, "C:/Users/leo44/Desktop/2021中研院實習/大腸癌/merged/CRC_species/GMPR-species_new.csv", row.names = TRUE)
