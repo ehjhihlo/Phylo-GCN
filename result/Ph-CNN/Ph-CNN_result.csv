@@ -1,0 +1,2 @@
+Precision_Normal,Precision_Cancer,Recall_Normal,Recall_Cancer,Auc_Score,F1_Score
+0.775862069,0.677419355,0.818181818,0.617647059,0.717914439,0.721307012
