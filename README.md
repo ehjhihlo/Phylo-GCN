@@ -8,7 +8,8 @@ Users can download the sources of this project by executing the commands below:
 git clone https://github.com/ehjhihlo/Phylo-GCN.git  
 cd Phylo-GCN  
 ```
-## data  
+## File introduction
+### data  
 The input dataset used for training. For Phylo-GCN, laplacian matrices and label is being used.  
   
 **matrix_1137** folder contains the laplacian matrices with all 1137 taxa  
@@ -17,11 +18,11 @@ The input dataset used for training. For Phylo-GCN, laplacian matrices and label
   
 **label** folder contains the sample and its corresponding label  
   
-## train  
+### train  
 The code for training the model, including Phylo-GCN demo and other models.    
-## trees
+### trees
 The newick file of phylogeny tree, including all 1137 taxa in this project.  
-## utils  
+### utils  
 The files, codes for calculating phylogeny distance and laplacian matrix.  
   
 **utils_data:** Contains all data used for calculating phylogeny distance and laplacian matrix.  
