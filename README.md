@@ -19,7 +19,7 @@ The input dataset used for training. For Phylo-GCN, laplacian matrices and label
 - **label** folder contains the sample and its corresponding label  
   
 ### result  
-The training result, including the result, prediction on each validation sample, confusion matirx, acc curve, loss curve and trained model.  
+The training result. Including the result, prediction on each validation sample, confusion matirx, acc curve, loss curve and trained model.  
 ### train  
 The code for training the model, including Phylo-GCN demo and other models.    
 ### trees
