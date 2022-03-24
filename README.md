@@ -10,7 +10,7 @@ cd Phylo-GCN
 ## data  
 Including the input dataset used for training.  
 ## train  
-The code for training the model.  
+The code for training the model, including Phylo-GCN demo and other models.    
 ## trees
 The newick file of phylogeny tree, including all 1137 taxa in this project.  
 ## utils  
