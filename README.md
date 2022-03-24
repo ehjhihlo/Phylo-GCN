@@ -27,10 +27,10 @@ The files, codes for calculating phylogeny distance and laplacian matrix.
 **utils_data:** Contains all data used for calculating phylogeny distance and laplacian matrix.  
 abundance_GMPR_norm.csv: GMPR normalized abundance table (1137 taxa).  
 abundance_GMPR_norm_496.csv: GMPR normalized abundance table (496 taxa).  
-taxa_list.txt: the list for all taxa in this project.  
-taxa_list_496.txt: the list for 496 taxa in this project.  
-species_compare folder:The calculated distance for each 2 taxa.  
-taxons folder:The taxa and its abindance in each sample.  
+taxa_list.txt: The list for all taxa in this project.  
+taxa_list_496.txt: The list for 496 taxa in this project.  
+species_compare folder: The calculated distance for each 2 taxa.  
+taxons folder: The taxa and its abindance in each sample.  
   
 **GMPR-normalize.Rmd:**  For GMPR normalization on original abundance table.
   
