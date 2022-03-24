@@ -8,7 +8,10 @@ git clone https://github.com/ehjhihlo/Phylo-GCN/.git
 cd Phylo-GCN  
 ```
 ## data  
-Including the input dataset used for training.  
+The input dataset used for training. For Phylo-GCN, laplacian matrices and label is being used.  
+**matrix_1137** folder contains the laplacian matrices with all 1137 taxa  
+**matrix** folder contains the laplacian matrices with all 496 taxa  
+**label** folder contains the sample and its corresponding label  
 ## train  
 The code for training the model, including Phylo-GCN demo and other models.    
 ## trees
