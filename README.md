@@ -5,7 +5,7 @@ Accurate prediction of diseases from metagenomic samples is important for develo
 ## Clone Repository
 Users can download the sources of this project by executing the commands below:
 ``` 
-git clone https://github.com/ehjhihlo/Phylo-GCN/.git  
+git clone https://github.com/ehjhihlo/Phylo-GCN.git  
 cd Phylo-GCN  
 ```
 ## data  
