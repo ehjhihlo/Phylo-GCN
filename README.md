@@ -6,7 +6,7 @@
 git clone https://github.com/ehjhihlo/Phylo-GCN/.git  
 cd Phylo-GCN  
 ```
-## dataset  
+## data  
 Including the input dataset used for training.  
 ## train  
 The code for training the model.  
